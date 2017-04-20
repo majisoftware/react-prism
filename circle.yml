@@ -19,4 +19,4 @@ deployment:
     tag: /[0-9]+(\.[0-9]+)*(-.+)?/
     commands:
       - NODE_ENV=production yarn run build
-      - npm publish
+      - npm publish --access public
