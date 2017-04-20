@@ -1,0 +1,44 @@
+{
+  "name": "@maji/react-prism",
+  "description": "A React component for highlighting code with Prism",
+  "version": "0.0.0",
+  "main": "lib/Prism.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard",
+    "build": "babel src --out-dir lib",
+    "start": "budo example/app.js --live -- --transform babelify --transform brfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majicloud/react-prism.git"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8"
+  },
+  "peerDependencies": {
+    "prismjs": "^1.6.0",
+    "react": "^15.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
+    "prismjs": "^1.6.0",
+    "budo": "^9.4.7",
+    "insert-css": "^2.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
