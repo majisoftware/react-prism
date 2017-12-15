@@ -33,6 +33,8 @@ A more complete example is in `example/app.js`.
 
 > **NOTE**: you will also need to include Prism's CSS. When installed with npm, its stylesheets are at `node_modules/prismjs/themes/*.css`.
 
+> **NOTE x 2**: to support languages other than JavaScript, you'll have to manually `import` the language from Prism. For example, to add Bash support, do `import 'prismjs/components/prism-bash'`.
+
 ## License
 
 MIT
