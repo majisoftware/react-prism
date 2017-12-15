@@ -1,7 +1,7 @@
 {
   "name": "@maji/react-prism",
   "description": "A React component for highlighting code with Prism",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/Prism.js",
   "license": "MIT",
   "scripts": {
