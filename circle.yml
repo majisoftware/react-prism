@@ -1,9 +1,13 @@
 version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:6
+
 jobs:
   build:
-    docker:
-      - image: circleci/node:6
-    working_directory: ~/react-prism
+    <<: *defaults
     steps:
       - checkout
       - restore_cache:
@@ -15,3 +19,12 @@ jobs:
           paths:
             - node_modules
       - run: yarn lint
+  publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+      - run: npm config set "//registry.yarnpkg.com/:_authToken" $NPM_AUTH
+      - run: npm publish
+    tags:
+      only: /^v?[0-9]+(\.[0-9]+)*(-.+)?/
