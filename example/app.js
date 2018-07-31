@@ -2,7 +2,6 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const insertCSS = require('insert-css')
 const fs = require('fs')
-const path = require('path')
 const Prism = require('../src/Prism')
 
 const styles = fs.readFileSync(require.resolve('prismjs/themes/prism.css'), 'utf-8')
