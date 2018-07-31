@@ -14,7 +14,6 @@
     "url": "git+https://github.com/majicloud/react-prism.git"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {
@@ -31,9 +30,9 @@
     "babel-preset-stage-0": "^6.24.1",
     "babelify": "^7.3.0",
     "brfs": "^1.4.3",
-    "prismjs": "^1.6.0",
     "budo": "^9.4.7",
     "insert-css": "^2.0.0",
+    "prismjs": "^1.6.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "standard": "^10.0.2"

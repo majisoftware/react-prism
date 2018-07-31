@@ -10,7 +10,7 @@ insertCSS(styles)
 const app = (
   <div className='app'>
     <h1>react-prism example</h1>
-    <Prism>
+    <Prism language='javascript'>
       {fs.readFileSync(__filename, 'utf-8')}
     </Prism>
   </div>
